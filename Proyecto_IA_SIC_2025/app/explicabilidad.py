@@ -1,4 +1,4 @@
-# app/explicabilidad_shap.py
+# app/explicabilidad.py
 import numpy as np
 import shap
 import matplotlib.pyplot as plt
@@ -127,3 +127,4 @@ def figura_shap_waterfall(modelo, X_una_fila, max_display=10):
             return plt.gcf()
     except Exception:
         return None
+
