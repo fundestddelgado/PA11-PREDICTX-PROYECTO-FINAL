@@ -13,6 +13,7 @@ Desarrollar un modelo de machine learning que prediga la probabilidad de deserci
 
 ## Herramientas utilizadas
 - **Python**
+- **Pycharm**: IDE
 - **Jupyter Notebook** : pruebas y errores
 - **Pandas / NumPy**: carga y preparación de datos.
 - **Scikit-learn**: entrenamiento, validación y métricas (modelo principal: **Random Forest**).
