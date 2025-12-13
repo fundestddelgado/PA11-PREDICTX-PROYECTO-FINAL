@@ -1,6 +1,6 @@
 # PA11-PREDICTX-PROYECTO-FINAL
 REPOSITORIO PARA EL PROYECTO FINAL Y HACKATON
-# Sistema de Decisión para Retención de Clientes (Churn) con Explicabilidad
+# Modelo de Predicción de deserción de Clientes Bancarios con Explicabilidad
 
 ## Planteamiento
 Desarrollar un modelo de machine learning que prediga la probabilidad de deserción (churn) de clientes bancarios para identificar tempranamente a los clientes con mayor riesgo y permitir estrategias preventivas de retención, incorporando explicabilidad para entender por qué el modelo toma cada decisión.
