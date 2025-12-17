@@ -1,0 +1,61 @@
+/* Sidebar oscuro */
+[data-testid="stSidebar"] {
+    background-color: #111827;
+}
+[data-testid="stSidebar"] h1,
+[data-testid="stSidebar"] h2,
+[data-testid="stSidebar"] h3,
+[data-testid="stSidebar"] p,
+[data-testid="stSidebar"] label {
+    color: #e5e7eb;
+}
+[data-testid="stSidebar"] .stRadio > div {
+    flex-direction: column;
+}
+[data-testid="stSidebar"] .stRadio label {
+    border-radius: 4px;
+    padding: 0.45rem 0.75rem;
+    margin-bottom: 0.25rem;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    font-weight: 500;
+    color: #9ca3af;
+}
+[data-testid="stSidebar"] .stRadio label:hover {
+    background-color: #1f2937;
+    color: #e5e7eb;
+}
+[data-testid="stSidebar"] .stRadio label:has(input[checked]) {
+    background-color: #374151;
+    color: #ffffff;
+}
+[data-testid="stSidebar"] .stRadio label:has(input[checked]) span {
+    color: #ffffff;
+}
+
+/* KPI cards en tema oscuro */
+.kpi-card {
+    background-color: #001f3f;
+    border-radius: 12px;
+    padding: 0.75rem 1rem;
+    box-shadow: 0 1px 5px rgba(0,0,0,0.5);
+    margin-bottom: 0.75rem;
+    border: 1px solid #1f2937;
+}
+.kpi-title {
+    font-size: 0.9rem;
+    color: #e5e7eb;
+    margin-bottom: 0.25rem;
+}
+.kpi-value {
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: #f9fafb;
+}
+.kpi-bottom {
+    margin-top: 0.6rem;
+    height: 6px;
+    border-radius: 999px;
+}
