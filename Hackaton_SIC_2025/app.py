@@ -5,7 +5,7 @@ import joblib
 import streamlit as st
 
 from general import render_general
-from Lista_riesgo import render_lista_riesgo
+from intervencion import render_intervencion
 from Cliente import render_cliente
 
 # rutas
@@ -33,6 +33,12 @@ def load_model(path: str):
 @st.cache_data
 def load_csv(path: str) -> pd.DataFrame:
     return pd.read_csv(path)
+
+def load_css():
+    css_path = Path(__file__).resolve().parent / "estilos" / "estilos.css"
+    st.markdown(f"<style>{css_path.read_text(encoding='utf-8')}</style>", unsafe_allow_html=True)
+
+load_css()
 
 def score_df(df: pd.DataFrame, pipeline, threshold: float) -> pd.DataFrame:
     if IDCOL not in df.columns:
@@ -65,6 +71,7 @@ def score_df(df: pd.DataFrame, pipeline, threshold: float) -> pd.DataFrame:
 # =========================
 # UI
 # =========================
+
 st.set_page_config(page_title="Plataforma", layout="wide")
 st.title("Plataforma de Alerta Temprana de Churn (Prototipo)")
 
@@ -80,12 +87,12 @@ if not DATA_DIR.exists():
 with st.sidebar:
     st.header("Datos")
     precargados = []
-    for name in ["train.csv", "test.csv"]:
+    for name in ["Data.csv"]:
         if (DATA_DIR / name).exists():
             precargados.append(name)
 
     if not precargados:
-        st.error("No encontré train.csv ni test.csv dentro de /datos")
+        st.error("No encontré Data.csv ni test.csv dentro de /datos")
         st.stop()
 
     elegido = st.selectbox("Dataset precargado", precargados, index=0)
@@ -102,7 +109,7 @@ if up is not None:
     fuente = "CSV subido"
 else:
     df = load_csv(str(DATA_DIR / elegido))
-    fuente = f"Precargado: {elegido}"
+    fuente = f"{elegido}"
 
 # Scoring automático
 src_key = (fuente, len(df), tuple(df.columns))
@@ -123,13 +130,12 @@ df = st.session_state["df"]
 scored = st.session_state["scored"]
 
 # Tabs
-tab1, tab2, tab3 = st.tabs(["Resumen", "Lista de acción", "Detalle cliente"])
+tab1, tab2 = st.tabs(["Resumen", "Detalle cliente"])
 
 with tab1:
     render_general(df=df, scored=scored, fuente=fuente, target=TARGET)
 
 with tab2:
-    render_lista_riesgo(scored=scored)
+    render_cliente(df=df, scored=scored, idcol=IDCOL, target=TARGET, pipeline=pipeline)
 
-with tab3:
-    render_cliente(scored=scored, idcol=IDCOL)
+
