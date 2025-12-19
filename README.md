@@ -1,5 +1,6 @@
 # PA11-PREDICTX-PROYECTO-FINAL
 REPOSITORIO PARA EL PROYECTO FINAL Y HACKATON
+
 **Carpeta Proyecto final SIC 2025**
 Modelo de Predicción de deserción de Clientes Bancarios con Explicabilidad
 Resumen
