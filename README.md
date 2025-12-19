@@ -2,16 +2,11 @@
 REPOSITORIO PARA EL PROYECTO FINAL Y HACKATON
 # Modelo de Predicción de deserción de Clientes Bancarios con Explicabilidad
 
-## Planteamiento
+**Carpeta Proyecto final SIC 2025**
+ Planteamiento
 Desarrollar un modelo de machine learning que prediga la probabilidad de deserción (churn) de clientes bancarios para identificar tempranamente a los clientes con mayor riesgo y permitir estrategias preventivas de retención, incorporando explicabilidad para entender por qué el modelo toma cada decisión.
 
-## Objetivos
-- Predecir la probabilidad de churn por cliente y clasificar el riesgo (bajo/medio/alto).
-- Evaluar el desempeño del modelo con métricas de clasificación.
-- Explicar predicciones a nivel global y por cliente (factores que más influyen).
-- Presentar resultados en un dashboard simple para consulta rápida.
-
-## Herramientas utilizadas
+Herramientas utilizadas
 - **Python**
 - **Pycharm**: IDE
 - **Jupyter Notebook** : pruebas y errores
@@ -22,6 +17,4 @@ Desarrollar un modelo de machine learning que prediga la probabilidad de deserci
 - **Joblib/Pickle**: guardado y carga del modelo entrenado.
 - **Dashboard web** : interfaz usando Streamlit con estilos (CSS).
 
-## Resultado del proyecto
-Se obtuvo un modelo entrenado capaz de identificar clientes con mayor riesgo de churn con un desempeño equilibrado en metricas, 
-Con **SHAP** se identifican las variables que más influyen en el churn a nivel general y también se generan explicaciones por cliente para apoyar decisiones de retención.
+
