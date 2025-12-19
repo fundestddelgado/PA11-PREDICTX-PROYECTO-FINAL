@@ -40,7 +40,9 @@ Herramientas utilizadas
 - **Dashboard web** : interfaz usando Streamlit con estilos (CSS).
 
 **Autores**
+
 Equipo: PREDICTX
+
 Miembros: 
 - Adair Alvarado
 - Johan Pimentel
