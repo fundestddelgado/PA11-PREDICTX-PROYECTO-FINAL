@@ -2,6 +2,7 @@
 REPOSITORIO PARA EL PROYECTO FINAL Y HACKATON
 
 **Carpeta Proyecto final SIC 2025**
+
 Modelo de Predicción de deserción de Clientes Bancarios con Explicabilidad
 
 Resumen
@@ -20,3 +21,20 @@ Herramientas utilizadas
 - **Dashboard web** : interfaz usando Streamlit con estilos (CSS).
 
 **Carpeta Hackaton SIC 2025**
+
+Plataforma de Alerta Temprana de Churn en suscripciones digitales
+
+Resumen 
+Nuestro proyecto es una Plataforma de Alerta Temprana de Churn para suscripciones digitales que identifica qué clientes tienen mayor probabilidad de abandonar antes de que cancelen. Usamos machine learning para calcular el riesgo de churn por cliente, segmentar (bajo/medio/alto) y priorizar el top 10% para intervenir con mayor impacto.  Además, la plataforma explica por qué el cliente está en riesgo (factores clave) y genera recomendaciones de retención para apoyar decisiones rápidas del equipo.
+
+Herramientas utilizadas
+- **Python**
+- **Pycharm**: IDE
+- **Jupyter Notebook** : pruebas y errores
+- **Pandas / NumPy**: carga y preparación de datos.
+- **Scikit-learn**: entrenamiento, validación y métricas (modelo principal: **Random Forest**).
+- **SHAP**: explicabilidad global y local (importancia de variables, waterfall/summary).
+- **Matplotlib** : visualizaciones.
+- **Reportlab** : Generacion de reportes
+- **Joblib/Pickle**: guardado y carga del modelo entrenado.
+- **Dashboard web** : interfaz usando Streamlit con estilos (CSS).
