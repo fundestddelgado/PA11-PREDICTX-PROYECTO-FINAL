@@ -38,3 +38,13 @@ Herramientas utilizadas
 - **Reportlab** : Generacion de reportes
 - **Joblib/Pickle**: guardado y carga del modelo entrenado.
 - **Dashboard web** : interfaz usando Streamlit con estilos (CSS).
+
+**Autores**
+Equipo: PREDICTX
+Miembros: 
+- Adair Alvarado
+- Johan Pimentel
+- Diego Jaimes
+- Melanie Rodrgiuez
+- Elias Gordillo
+
